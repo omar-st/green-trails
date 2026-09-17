@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="club.css">
+
+    <title>Application</title>
+</head>
+
+<body>
+
+    <nav id="topmenu">
+        <ul>
+            <a href="index.html">
+                <button>Home</button>
+            </a>
+
+            <a href="gallery.html">
+                <button>Gallery</button>
+            </a>
+
+            <a href="about.html">
+                <button>About Us</button>
+            </a>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <h2>The Green Trails Club</h2>
+
+        <h3>Membership Sign-Up Form</h3>
+
+        <form>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+
+
+            <p><strong>Gender:</strong></p>
+
+            <div class="options">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+
+            <p><strong>Where do you live?</strong></p>
+
+            <input type="text" id="location" name="location">
+
+
+            <p><strong>How often do you go hiking?</strong></p>
+
+            <div class="options">
+                <input type="radio" id="never" name="hiking" value="never">
+                <label for="never">Never</label>
+
+                <input type="radio" id="sometimes" name="hiking" value="sometimes">
+                <label for="sometimes">Sometimes</label>
+
+                <input type="radio" id="often" name="hiking" value="often">
+                <label for="often">Often</label>
+
+                <input type="radio" id="veryoften" name="hiking" value="veryoften">
+                <label for="veryoften">Very Often</label>
+            </div>
+
+
+            <p><strong>Why would you like to join The Green Trails Club?</strong></p>
+
+            <textarea id="reason" name="reason" rows="5"></textarea>
+
+
+            <p><strong>What types of activities are you interested in?</strong></p>
+
+            <div class="options">
+                <input type="checkbox" id="activity-hiking" name="activities" value="hiking">
+                <label for="activity-hiking">Hiking</label>
+
+                <input type="checkbox" id="nature" name="activities" value="nature">
+                <label for="nature">Nature Walks</label>
+
+                <input type="checkbox" id="camping" name="activities" value="camping">
+                <label for="camping">Camping</label>
+
+                <input type="checkbox" id="beach" name="activities" value="beach">
+                <label for="beach">Beach Trips</label>
+
+                <input type="checkbox" id="environment" name="activities" value="environment">
+                <label for="environment">Environmental Activities</label>
+
+                <input type="checkbox" id="other" name="activities" value="other">
+                <label for="other">Other</label>
+            </div>
+
+
+            <label for="emergency">Emergency Contact Name:</label>
+            <input type="text" id="emergency" name="emergency">
+
+            <label for="emergencyphone">Emergency Contact Phone:</label>
+            <input type="tel" id="emergencyphone" name="emergencyphone">
+
+
+            <p><strong>Member Agreement</strong></p>
+
+            <div class="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+
+                <label for="agreement">
+                    I agree to follow the rules of The Green Trails Club
+                    and respect other members and the environment.
+                </label>
+            </div>
+
+
+            <label for="signature">Signature:</label>
+            <input type="text" id="signature" name="signature">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+
+            <button type="submit" class="submit-button">
+                Submit Application
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>
